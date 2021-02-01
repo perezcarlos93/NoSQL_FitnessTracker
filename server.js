@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 const express = require('express');
 
-const PORT = process.env.MONGODB_URI || 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
