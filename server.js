@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 // Connecting to MongoDB
 mongoose.connect(
-	'mongodb+srv://perezcarlos93:8AA3gHyg8QdwmtGi@cluster0.arzwt.mongodb.net/workout?retryWrites=true&w=majority' ||
+	'mongodb+srv://perezcarlos93:8AA3gHyg8QdwmtGi@cluster0.arzwt.mongodb.net/testbd?retryWrites=true&w=majority' ||
 		'mongodb://localhost/workout',
 	{
 		useNewUrlParser: true,
