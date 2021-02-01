@@ -16,10 +16,14 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Connecting to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
-	useNewUrlParser: true,
-	useFindAndModify: false,
-});
+mongoose.connect(
+	'mongodb+srv://perezcarlos93:8AA3gHyg8QdwmtGi@cluster0.arzwt.mongodb.net/workout?retryWrites=true&w=majority' ||
+		'mongodb://localhost/workout',
+	{
+		useNewUrlParser: true,
+		useFindAndModify: false,
+	}
+);
 
 // Routes
 app.use(require('./routes/homeRoutes'));
